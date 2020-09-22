@@ -12,6 +12,7 @@
     --primery-white-color: #FFFFFF;
     --secondary-text-color: rgba(255, 255, 255, 0.6);
     --footer-background-color: #2F303A;
+    --footer-background-icon: rgba(255, 255, 255, 0.1);
     /* var */
 }
 
@@ -84,8 +85,6 @@ ul {
 
 .site-nav .link{
     display: block;
-
-    
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -102,6 +101,45 @@ ul {
 .site-nav .link.current{
     color: var(--accent-color);
 }
+/* Social-links */
+
+.social-icon-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.social-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #afb1b8;
+}
+
+.social-icon-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+}
+.team-icon {
+    fill: currentColor;
+}
+.social-icon-link:hover {
+   background-color: var(--accent-color);
+}
+
+.social-icon-link:hover .team-icon,
+.social-icon-link:focus .team-icon {
+    fill: var(--primery-white-color);
+}
 
 /* Contact */
 
@@ -109,7 +147,6 @@ ul {
     display: flex;
     margin-left: auto;
 }
-
 .contact .item + .item {
     margin-left: 50px;
 }
@@ -119,19 +156,32 @@ ul {
     text-decoration: none;
 }
 
-.contact .link::before {
-    width: 16px;
-    height: 12px;
-    background-color: red;
-}
-
-
-.contact .link:hover,
-.contact .link:focus{
+.link:hover ,
+.link:focus {
     color: var(--accent-color);
 }
 
+.contact .link::before {
+    width: 16px;
+    height: 12px;
+}
 
+
+
+/*  Иконки */
+.mail {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+    fill: var(--primery-text-color);
+}
+
+.tel {
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+    fill: var(--primery-text-color);
+}
 
 /* Footer */
 .footer{
@@ -176,8 +226,8 @@ ul {
     flex-wrap: wrap;
     max-width: 270px;
     display: inline-block;
-margin-top: 12px;
-margin-left: 70px;
+    margin-top: 12px;
+    margin-left: 70px;
 }
 
 .footer-title {
@@ -192,6 +242,16 @@ margin-left: 70px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primery-white-color);
+}
+
+.footer-join .social-icon-link {
+    color: var(--primery-white-color);
+    background-color: var(--footer-background-icon);
+}
+
+.footer-join .social-icon-link:hover
+.footer-join .social-icon-link:focus {
+    background-color: var(--accent-color);
 }
 
 /* Address */

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@500;700;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
                 rel="stylesheet">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/portfolio.css">
@@ -17,15 +17,22 @@
             <a href="./index.html" class="logo"><span class="logo-accent">Web</span>Studio</a>
 
             <ul class="site-nav list">
-                <li class="item"><a href="./index.html" class="link current">Студия</a></li>
-                <li class="item"><a href="" class="link">Портфолио</a></li>
+                <li class="item"><a href="" class="link current">Студия</a></li>
+                <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
                 <li class="item"><a href="" class="link">Контакты</a></li>
             </ul>
         </nav>
 
         <ul class="contact list">
-            <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-            <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+            <li class="item"><a href="mailto:info@devstudio.com" class="link">
+                    <svg class="mail">
+                        <use href="./images/symbol-defs.svg#mail"></use>
+                    </svg> info@devstudio.com</a></li>
+            <li class="item"><a href="tel:+380961111111" class="link">
+                    <svg class="tel">
+                        <use href="./images/symbol-defs.svg#tel"></use>
+                    </svg> +38 096 111 11 11
+                </a></li>
         </ul>
     </div>
 </header>
@@ -37,7 +44,7 @@
                 <h1 class="flex-title">Портфолио</h1>
                 <ul class="button-list">
                    <li class="button-item">
-                    <button class="button primery">Все</button>
+                    <button class="button">Все</button>
                    </li> 
                     <li class="button-item">
                         <button class="button">Веб-сайты</button>
@@ -139,20 +146,54 @@
         </div>
     </main>
     <!-- Подвол страницы-->
-    <footer class="page-footer">
-        <div class="container">
-            <a href="./index.html" class="logo"><span class="logo-accent">Web</span><span
-                    class="logo-accent secondary">Studio</span></a>
+    <footer class="footer">
+        <div class="container flexbox">
+            <div class="footer-adress">
+                <a href="./index.html" class="logo"><span class="logo-accent">Web</span><span
+                        class="logo-accent secondary">Studio</span></a>
     
-            <address>
-                <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
-                <ul class="contact-footer">
-                    <li class="mail"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                    <li class="phone"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                <address>
+                    <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+                    <ul class="contact-footer">
+                        <li class="mail"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                        <li class="phone"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-join">
+                <h3 class="footer-title">Присоединяйтесь</h3>
+                <ul class="social-icon-list">
+                    <li class="social-icon-item">
+                        <a class="social-icon-link" href="https://www.instagram.com">
+                            <svg class="social-icon team-icon">
+                                <use href="./images/symbol-defs.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-icon-item">
+                        <a class="social-icon-link" href="https://www.twitter.com">
+                            <svg class="social-icon team-icon">
+                                <use href="./images/symbol-defs.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-icon-item">
+                        <a class="social-icon-link" href="https://www.facebook.com">
+                            <svg class="social-icon team-icon">
+                                <use href="./images/symbol-defs.svg#facebook"></use>
+                            </svg></a>
+                    </li>
+                    <li clas="social-icon-item">
+                        <a class="social-icon-link" href="https:/www.linkedin.com">
+                            <svg class="social-icon team-icon">
+                                <use href="./images/symbol-defs.svg#linkedin"></use>
+                            </svg></a>
+                    </li>
                 </ul>
-            </address>
+            </div>
         </div>
     </footer>
+
 
 </body>
 </html>

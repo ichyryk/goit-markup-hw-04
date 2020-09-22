@@ -92,7 +92,8 @@ img {
    border-radius: 4px;
    border: 0;
 }
-.button-item .primery:hover {
+.button:hover,
+.button:focus {
    color: var(--primery-white-color);
    background-color: var(--accent-color);
 }
@@ -112,6 +113,12 @@ img {
    display: block;
    text-decoration: none;
 }
+.flex-link:hover {
+   border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .flex-list {
    display: flex;
    flex-wrap: wrap;
@@ -120,6 +127,7 @@ img {
 }
 
 /* Елементи */
+
 .flex-element .content {
    background: #FFFFFF;
    border: 1px solid #EEEEEE;
