@@ -26,6 +26,10 @@ ul {
     list-style: none;
 }
 
+li {
+    display: list-item;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -43,6 +47,11 @@ ul {
 
 .page-header {
     background-color: var(--primery-white-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid #ececec;
+
 }
 
 .page-header .logo {
@@ -72,9 +81,6 @@ ul {
     padding-bottom: 32px;
 }
 
-.site-nav .item{
-    /* outline: 5px solid plum; */
-}
 
 .site-nav .item + .item {
     margin-left: 50px;
@@ -152,20 +158,17 @@ ul {
 }
 
 .contact .link{
+    display: inline-flex;
+    align-items: center;
     color: var(--primery-text-color);
     text-decoration: none;
+
 }
 
-.link:hover ,
-.link:focus {
+.contact .link:hover ,
+.contact .link:focus {
     color: var(--accent-color);
 }
-
-.contact .link::before {
-    width: 16px;
-    height: 12px;
-}
-
 
 
 /*  Иконки */
@@ -192,6 +195,7 @@ ul {
 
 .flexbox {
     display: flex;
+    align-items: baseline;
 }
 .footer-address {
    display: inline-block;
@@ -222,18 +226,15 @@ ul {
 }
 
 .footer-join {
-    display: inline-block;
+    /* display: inline-block;
     flex-wrap: wrap;
-    max-width: 270px;
-    display: inline-block;
-    margin-top: 12px;
+    max-width: 270px; */
     margin-left: 70px;
 }
 
 .footer-title {
      margin-top: 0;
-     margin-bottom: 20px;
-     width: 145px;
+     margin-bottom: 0px;
      font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -249,17 +250,24 @@ ul {
     background-color: var(--footer-background-icon);
 }
 
-.footer-join .social-icon-link:hover
-.footer-join .social-icon-link:focus {
+.footer-join.social-icon-link:hover
+.footer-join.social-icon-link:focus {
     background-color: var(--accent-color);
 }
 
 /* Address */
 
-.address {
-    margin-bottom: 9px;
+.block-address {
+    margin-top: 20px;
     font-style: normal;
 }
+
+.block-address .link{
+    display: inline-block;
+    margin-top: 9px;
+} 
+
+
 .address .link {
     font-style: normal;
     font-weight: normal;
@@ -267,23 +275,21 @@ ul {
     line-height: 1.71;
 }
 .address {
+    margin: 0;
     color: var(--primery-white-color);
 }
 
 
 /*  Contact */
-.contact-footer {
-    padding-left: 0;
-    font-style: normal;
-    margin-top: 0;
-    margin-bottom: 0;
-}
 
 .contact-footer .link:hover,
 .contact-footer .link:focus{
     color: var(--accent-color);
 }
 
-.contact-footer .mail {
-    margin-bottom: 9px;
+/* .contact-footer .mail {
+    margin-top: 9px;
 }
+.contact-footer .phone {
+    margin-top: 9px;
+} */

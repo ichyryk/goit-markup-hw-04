@@ -32,13 +32,7 @@ img {
    width: 100%;
    height: auto;
 }
-/* .container {
-   margin-left: auto;
-   margin-right: auto;
-   padding-left: 15px;
-   padding-right: 15px;
-   width: 1170px;
-} */
+
 
 .container, 
 .main-container {
@@ -90,15 +84,24 @@ img {
    padding: 10px 32px;
    background-color: #F5F4FA;
    border-radius: 4px;
-   border: 0;
+   border: 1px solid transparent;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.6;
+   text-align: center;
+   letter-spacing: 0.03em;
+   cursor: pointer;
+   
 }
 .button:hover,
 .button:focus {
    color: var(--primery-white-color);
    background-color: var(--accent-color);
 }
+
 .button-item {
    margin-right: 8px;
+   
 }
 
 .button-item:nth-child(5n) {
@@ -112,10 +115,10 @@ img {
 .flex-link {
    display: block;
    text-decoration: none;
+   border: 1px solid #eeeeee;
 }
 .flex-link:hover {
-   border: 1px solid #eeeeee;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -130,7 +133,6 @@ img {
 
 .flex-element .content {
    background: #FFFFFF;
-   border: 1px solid #EEEEEE;
    padding-top: 20px;
    padding-bottom: 20px;
    padding-left: 24px;
@@ -147,7 +149,7 @@ img {
     line-height: 2; 
  }
 
-  .flex-element .text {
+.flex-element .text {
    margin-top: 0;
    margin-bottom: 0;
    color: var(--primery-text-color);
