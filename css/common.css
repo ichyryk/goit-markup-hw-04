@@ -245,6 +245,14 @@ li {
     color: var(--primery-white-color);
 }
 
+.footer-social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 0;
+}
+
 .footer-join .social-icon-link {
     color: var(--primery-white-color);
     background-color: var(--footer-background-icon);
