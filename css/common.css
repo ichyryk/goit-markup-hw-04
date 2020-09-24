@@ -272,9 +272,7 @@ li {
 
 .block-address .link{
     display: inline-block;
-    margin-top: 9px;
 } 
-
 
 .address .link {
     font-style: normal;
@@ -289,15 +287,17 @@ li {
 
 
 /*  Contact */
+.contact-footer {
+    margin-top: 9px;
+}
 
 .contact-footer .link:hover,
 .contact-footer .link:focus{
     color: var(--accent-color);
 }
 
-/* .contact-footer .mail {
+.phone {
     margin-top: 9px;
 }
-.contact-footer .phone {
-    margin-top: 9px;
-} */
+
+
